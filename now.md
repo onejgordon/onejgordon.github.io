@@ -45,6 +45,15 @@
   body {
     font-family: 'Source Sans Pro', sans-serif;
   }
+  a:link, a:visited {
+    color: gray;
+    text-decoration: underline;
+  }
+
+  a:hover {
+    color: black;
+  }
+
 </style>
 
 <div class="text-center" style="margin-top: 10px">
