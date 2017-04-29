@@ -1,5 +1,5 @@
 ---
-title: Generative Predictive Models
+title: An illustrated overview of how our brains (might) think — the fascinating intuition of the generative predictive model
 layout: page
 ---
 
