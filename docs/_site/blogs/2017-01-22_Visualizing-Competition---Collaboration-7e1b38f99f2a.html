@@ -1,0 +1,73 @@
+<!DOCTYPE html><html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>Visualizing Competition &amp; Collaboration</title><meta name="description" content="I’ve been enjoying zach lieberman’s sketches recently, and started thinking about similarly cell-based animations where cells interact…"><style>
+      * {
+        font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+      }
+      html, body {
+        margin: 0;
+        padding: 0;
+      }
+      h1 {
+        font-size: 50px;
+        margin-bottom: 17px;
+        color: #333;
+      }
+      h2 {
+        font-size: 24px;
+        line-height: 1.6;
+        margin: 30px 0 0 0;
+        margin-bottom: 18px;
+        margin-top: 33px;
+        color: #333;
+      }
+      h3 {
+        font-size: 30px;
+        margin: 10px 0 20px 0;
+        color: #333;
+      }
+      header {
+        width: 640px;
+        margin: auto;
+      }
+      section {
+        width: 640px;
+        margin: auto;
+      }
+      section p {
+        margin-bottom: 27px;
+        font-size: 20px;
+        line-height: 1.6;
+        color: #333;
+      }
+      section img {
+        max-width: 640px;
+      }
+      footer {
+        padding: 0 20px;
+        margin: 50px 0;
+        text-align: center;
+        font-size: 12px;
+      }
+      .aspectRatioPlaceholder {
+        max-width: auto !important;
+        max-height: auto !important;
+      }
+      .aspectRatioPlaceholder-fill {
+        padding-bottom: 0 !important;
+      }
+      header,
+      section[data-field=subtitle] {
+        display: none;
+      }
+      </style></head><body><article class="h-entry">
+<header>
+<h1 class="p-name">Visualizing Competition &amp; Collaboration</h1>
+</header>
+<section data-field="subtitle" class="p-summary">
+I’ve been enjoying zach lieberman’s sketches recently, and started thinking about similarly cell-based animations where cells interact…
+</section>
+<section data-field="body" class="e-content">
+<section name="8cf7" class="section section--body section--first"><div class="section-divider"><hr class="section-divider"></div><div class="section-content"><div class="section-inner sectionLayout--insetColumn"><h3 name="8946" id="8946" class="graf graf--h3 graf--leading graf--title">Visualizing Competition &amp; Collaboration</h3><p name="04e3" id="04e3" class="graf graf--p graf-after--h3">I’ve been enjoying <a href="https://medium.com/u/f8b5df9b82a0" data-href="https://medium.com/u/f8b5df9b82a0" data-anchor-type="2" data-user-id="f8b5df9b82a0" data-action-value="f8b5df9b82a0" data-action="show-user-card" data-action-type="hover" class="markup--user markup--p-user" target="_blank">zach lieberman</a>’s <a href="https://www.instagram.com/zach.lieberman/" data-href="https://www.instagram.com/zach.lieberman/" class="markup--anchor markup--p-anchor" target="_blank">sketches</a> recently, and started thinking about similarly cell-based animations where cells interact dynamically with others in their neighborhood. I tried out a variety of competitive and collaborative dynamics for these interactions. The results, in retrospect, are reminiscent of evolutionary predator / prey simulations (<a href="https://www.google.com/search?q=evolution+simulation+predator+prey&amp;tbm=isch&amp;tbs=rimg:CSQwpHwqHAs-IjiGnNjbN9BCxsxczqdju3iAEyEN0dQuIZEghNQGqap4jg1PjQlSMnoWApGilcMPCZoZ3fjjg53vGCoSCYac2Ns30ELGEdDk8zJ5owAoKhIJzFzOp2O7eIARG7RPcPmZIqsqEgkTIQ3R1C4hkRGFkYxWyAo-IioSCSCE1AapqniOEfZ4Fylv-FLcKhIJDU-NCVIyehYRFNf_1N2G2jDkqEgkCkaKVww8JmhHZjFOsIt-k_1SoSCRnd-OODne8YEZxEOQ6pqQ_1e&amp;tbo=u&amp;sa=X&amp;ved=0ahUKEwjOqbShgdbRAhVNkRQKHSMXDpoQ9C8ICQ&amp;biw=973&amp;bih=635&amp;dpr=2" data-href="https://www.google.com/search?q=evolution+simulation+predator+prey&amp;tbm=isch&amp;tbs=rimg:CSQwpHwqHAs-IjiGnNjbN9BCxsxczqdju3iAEyEN0dQuIZEghNQGqap4jg1PjQlSMnoWApGilcMPCZoZ3fjjg53vGCoSCYac2Ns30ELGEdDk8zJ5owAoKhIJzFzOp2O7eIARG7RPcPmZIqsqEgkTIQ3R1C4hkRGFkYxWyAo-IioSCSCE1AapqniOEfZ4Fylv-FLcKhIJDU-NCVIyehYRFNf_1N2G2jDkqEgkCkaKVww8JmhHZjFOsIt-k_1SoSCRnd-OODne8YEZxEOQ6pqQ_1e&amp;tbo=u&amp;sa=X&amp;ved=0ahUKEwjOqbShgdbRAhVNkRQKHSMXDpoQ9C8ICQ&amp;biw=973&amp;bih=635&amp;dpr=2" class="markup--anchor markup--p-anchor" target="_blank">like these</a>) — I find the growing cityscape visualization sort of compelling (though no where near as aesthetically interesting as Zach’s sketches).</p><p name="b507" id="b507" class="graf graf--p graf-after--p">Rules / constraints for all experiments:</p><ul class="postList"><li name="2b6f" id="2b6f" class="graf graf--li graf-after--p">All cells are initialized to small random heights and small random rates of growth (positive and negative)</li><li name="0196" id="0196" class="graf graf--li graf-after--li">Simulation ends if all cells have no height, or any cell reaches 100 (and sometimes never)</li><li name="4b7c" id="4b7c" class="graf graf--li graf-after--li">Each cell’s dynamics are described completely by a single function that is passed the cell’s state, and all its neighbors, and returns a single change to its growth rate (can be up, down, or zero)</li><li name="cb16" id="cb16" class="graf graf--li graf-after--li">Cells are colored reddish when growth rate is decreasing (becoming more negative) and green when positive. Gray otherwise.</li><li name="2ec9" id="2ec9" class="graf graf--li graf-after--li">Neighborhood sizes can vary (here they’re between a radius of 1 and 5)</li></ul><p name="abae" id="abae" class="graf graf--p graf-after--li">Each is labeled with a narrative of the rule used, and an interpretation of the result. Because of the random initializations, some of these look very different each time they’re run.</p><h4 name="98d2" id="98d2" class="graf graf--h4 graf-after--p">Trivial Trials</h4><figure name="b10f" id="b10f" class="graf graf--figure graf-after--h4"><div class="aspectRatioPlaceholder is-locked" style="max-width: 600px; max-height: 593px;"><div class="aspectRatioPlaceholder-fill" style="padding-bottom: 98.8%;"></div><img class="graf-image" data-image-id="1*gzqO2kNNDA_mPwfV0o-pLA.gif" data-width="600" data-height="593" src="https://cdn-images-1.medium.com/max/1600/1*gzqO2kNNDA_mPwfV0o-pLA.gif"></div></figure><figure name="3581" id="3581" class="graf graf--figure graf-after--figure"><div class="aspectRatioPlaceholder is-locked" style="max-width: 600px; max-height: 593px;"><div class="aspectRatioPlaceholder-fill" style="padding-bottom: 98.8%;"></div><img class="graf-image" data-image-id="1*MtZ8c161RxKPV4sgaiiNFw.gif" data-width="600" data-height="593" src="https://cdn-images-1.medium.com/max/1600/1*MtZ8c161RxKPV4sgaiiNFw.gif"></div></figure><h4 name="f73e" id="f73e" class="graf graf--h4 graf-after--figure">Slightly More Interesting</h4><figure name="235d" id="235d" class="graf graf--figure graf-after--h4"><div class="aspectRatioPlaceholder is-locked" style="max-width: 600px; max-height: 593px;"><div class="aspectRatioPlaceholder-fill" style="padding-bottom: 98.8%;"></div><img class="graf-image" data-image-id="1*NVQhpHXqKq1x--TgJUc3bg.gif" data-width="600" data-height="593" src="https://cdn-images-1.medium.com/max/1600/1*NVQhpHXqKq1x--TgJUc3bg.gif"></div></figure><figure name="780b" id="780b" class="graf graf--figure graf-after--figure"><div class="aspectRatioPlaceholder is-locked" style="max-width: 600px; max-height: 593px;"><div class="aspectRatioPlaceholder-fill" style="padding-bottom: 98.8%;"></div><img class="graf-image" data-image-id="1*gwM5z-KVLkyoehyAJJ3SRQ.gif" data-width="600" data-height="593" src="https://cdn-images-1.medium.com/max/1600/1*gwM5z-KVLkyoehyAJJ3SRQ.gif"></div></figure><figure name="bfd1" id="bfd1" class="graf graf--figure graf-after--figure"><div class="aspectRatioPlaceholder is-locked" style="max-width: 600px; max-height: 593px;"><div class="aspectRatioPlaceholder-fill" style="padding-bottom: 98.8%;"></div><img class="graf-image" data-image-id="1*JX8KWz1nptrN-ibuM_-nlQ.gif" data-width="600" data-height="593" src="https://cdn-images-1.medium.com/max/1600/1*JX8KWz1nptrN-ibuM_-nlQ.gif"></div></figure><figure name="b021" id="b021" class="graf graf--figure graf-after--figure"><div class="aspectRatioPlaceholder is-locked" style="max-width: 600px; max-height: 593px;"><div class="aspectRatioPlaceholder-fill" style="padding-bottom: 98.8%;"></div><img class="graf-image" data-image-id="1*9erpHh0WUXOF2hUa8C3lHw.gif" data-width="600" data-height="593" src="https://cdn-images-1.medium.com/max/1600/1*9erpHh0WUXOF2hUa8C3lHw.gif"></div></figure><figure name="4dba" id="4dba" class="graf graf--figure graf-after--figure"><div class="aspectRatioPlaceholder is-locked" style="max-width: 600px; max-height: 593px;"><div class="aspectRatioPlaceholder-fill" style="padding-bottom: 98.8%;"></div><img class="graf-image" data-image-id="1*1Ckmfhzl81k8mQyy4E1Rvg.gif" data-width="600" data-height="593" src="https://cdn-images-1.medium.com/max/1600/1*1Ckmfhzl81k8mQyy4E1Rvg.gif"></div></figure><p name="b762" id="b762" class="graf graf--p graf-after--figure">Takeaways:</p><ul class="postList"><li name="3805" id="3805" class="graf graf--li graf-after--p">In some cases it was surprisingly hard to turn a concept (my assumption of how a dynamic would work) into the expected result. Bad intuition for dynamical systems?</li><li name="c26f" id="c26f" class="graf graf--li graf-after--li">Many complex rules collapse quickly to trivial results — building in balance (to create stability) is sometimes challenging.</li><li name="fe36" id="fe36" class="graf graf--li graf-after--li graf--last">Flickering is a result of the logic getting stuck on the line between two states — a buffer or some implementation of momentum would help.</li></ul></div></div></section><section name="5f22" class="section section--body section--last"><div class="section-divider"><hr class="section-divider"></div><div class="section-content"><div class="section-inner sectionLayout--insetColumn"><p name="38cf" id="38cf" class="graf graf--p graf--leading graf--last">The code (which is all done with <a href="http://paperjs.org" data-href="http://paperjs.org" class="markup--anchor markup--p-anchor" target="_blank">paper.js</a>) is <a href="https://github.com/onejgordon/jrg-sketches/blob/master/js/competition.js" data-href="https://github.com/onejgordon/jrg-sketches/blob/master/js/competition.js" class="markup--anchor markup--p-anchor" target="_blank">here</a>.</p></div></div></section>
+</section>
+<footer><p>By <a href="https://medium.com/@onejgordon" class="p-author h-card">Jeremy Gordon</a> on <a href="https://medium.com/p/7e1b38f99f2a"><time class="dt-published" datetime="2017-01-22T15:21:52.985Z">January 22, 2017</time></a>.</p><p>Exported from <a href="https://medium.com">Medium</a> on February 5, 2017.</p></footer></article>
+
+</body></html>
