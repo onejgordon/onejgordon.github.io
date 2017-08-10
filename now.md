@@ -58,7 +58,7 @@
 
 <div class="text-center" style="margin-top: 10px">
 
-  <h5>Interests: Design for decisions, cooperation, self-awareness.</h5>
+  <h5>Interests: Perception and prediction in brains and bits</h5>
   <br/>
   <img src="http://jgordon.io/images/jeremygordon.jpg" class="center-block img-responsive img-circle" width="100" />
 
@@ -72,15 +72,14 @@
     <p>I'm at home in Nairobi</p>
 
     <ul>
-    	<li>I'm busy growing <a href="https://www.echomobile.org">Echo Mobile</a></li>
-    	<li>I'm building mini-products as a learning tool (e.g. <a href="http://flowdash.co">Action Potential</a>, as a motivation tool to dig into <a href="https://cloud.google.com/bigquery/">BigQuery</a>)</li>
-    	<li>I'm taking <a href="https://www.coursera.org/specializations/probabilistic-graphical-models">Probabilistic Graphical Models</a> on Coursera</li>
+      <li>I'm starting a PhD program at Berkeley's School of Information</li>
+    	<li>I'm building mini-products as a learning tool (e.g. <a href="http://flowdash.co">Flow Dashboard</a>, as a motivation tool to dig into <a href="https://cloud.google.com/bigquery/">BigQuery</a>)</li>
     	<li>I'm playing with <a href="http://www.paperjs.org">PaperJS</a> <a href="https://github.com/onejgordon/jrg-sketches">sketches</a> as an outlet for visualizing concepts</li>
     	<li>I'm <a href="https://www.goodreads.com/user/show/2909873-jeremy-gordon">reading</a></li>
     </ul>
 
     <p>
-    This update was April 20th, 2017.
+    This update was August 9th, 2017.
     </p>
   </div>
 </div>
