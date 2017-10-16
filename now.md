@@ -60,7 +60,7 @@
 
   <h5>Interests: Perception and prediction in brains and bits</h5>
   <br/>
-  <img src="/images/berkeley_jrg.jpg" class="center-block img-responsive img-circle" width="100" />
+  <img src="assets/images/berkeley_jrg.jpg" class="center-block img-responsive img-circle" width="100" />
 
 </div>
 
@@ -69,7 +69,7 @@
 
     <h2 style="font-family: monospace">/now</h2>
 
-    <p>I'm at home in Nairobi</p>
+    <p>I'm at home in Berkeley</p>
 
     <ul>
       <li>I'm a PhD student at Berkeley's School of Information</li>
