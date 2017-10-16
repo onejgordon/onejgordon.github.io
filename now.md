@@ -60,7 +60,7 @@
 
   <h5>Interests: Perception and prediction in brains and bits</h5>
   <br/>
-  <img src="http://jgordon.io/images/jeremygordon.jpg" class="center-block img-responsive img-circle" width="100" />
+  <img src="/images/berkeley_jrg.jpg" class="center-block img-responsive img-circle" width="100" />
 
 </div>
 
@@ -72,14 +72,13 @@
     <p>I'm at home in Nairobi</p>
 
     <ul>
-      <li>I'm starting a PhD program at Berkeley's School of Information</li>
-    	<li>I'm building mini-products as a learning tool (e.g. <a href="http://flowdash.co">Flow Dashboard</a>, as a motivation tool to dig into <a href="https://cloud.google.com/bigquery/">BigQuery</a>)</li>
-    	<li>I'm playing with <a href="http://www.paperjs.org">PaperJS</a> <a href="https://github.com/onejgordon/jrg-sketches">sketches</a> as an outlet for visualizing concepts</li>
+      <li>I'm a PhD student at Berkeley's School of Information</li>
+      <li>I'm getting involved in a number of research projects at the BioSENSE lab.</li>
     	<li>I'm <a href="https://www.goodreads.com/user/show/2909873-jeremy-gordon">reading</a></li>
     </ul>
 
     <p>
-    This update was August 9th, 2017.
+    This update was October 16th, 2017.
     </p>
   </div>
 </div>
