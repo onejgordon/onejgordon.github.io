@@ -69,16 +69,17 @@
 
     <h2 style="font-family: monospace">/now</h2>
 
-    <p>I'm at home in Berkeley</p>
+    <p>I'm mostly in Berkeley</p>
 
     <ul>
       <li>I'm a PhD student at Berkeley's School of Information</li>
       <li>I'm getting involved in a number of research projects at the BioSENSE lab.</li>
     	<li>I'm <a href="https://www.goodreads.com/user/show/2909873-jeremy-gordon">reading</a></li>
+      <li>I'm infrequently <a href="https://medium.com/@onejgordon" target="_blank">writing</a>.</li>
     </ul>
 
     <p>
-    This update was October 16th, 2017.
+    This update was October 21st, 2017.
     </p>
   </div>
 </div>
